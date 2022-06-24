@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 require_relative '../solver'
 
 solver = Solver.new
@@ -9,6 +7,11 @@ describe 'factorial method' do
     fact = solver.factorial(3)
 
     expect(fact).to eq(6)
+  end
+
+  it 'raises exception for negative number' do
+    fact = Solver.new
+    expect { fact.factorial(-5) }.to raise_exception
   end
 end
 
