@@ -1,8 +1,10 @@
-require_relative '../solver.rb'
+# frozen_string_literal: true
+
+require_relative '../solver'
 
 solver = Solver.new
 
-describe "factorial method" do
+describe 'factorial method' do
   it 'takes one argument and returns its factorial' do
     fact = solver.factorial(3)
 
