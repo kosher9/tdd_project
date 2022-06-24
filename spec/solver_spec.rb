@@ -42,5 +42,11 @@ describe Solver do
 
       expect(str).to eq('fizzbuzz')
     end
+
+    it 'takes an integer N and returns N as a string for other cases' do
+      str = @solver.fizzbuzz(7)
+
+      expect(str).to eq('7')
+    end
   end
 end
