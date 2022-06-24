@@ -3,6 +3,7 @@
 # tdd_project/spec/solver_spec.rb
 class Solver
   def factorial(number)
+    raise "Negative number not accepted" if number < 0
     (1..number).inject(:*) || 1
   end
 
@@ -18,7 +19,7 @@ class Solver
     elsif (num % 5).zero?
       'buzz'
     else
-      num
+      num.to_s
     end
   end
 end
