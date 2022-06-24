@@ -10,7 +10,6 @@ describe 'factorial method' do
   end
 
   it 'raises exception for negative number' do
-    fact = Solver.new
     expect { fact.factorial(-5) }.to raise_exception
   end
 end
